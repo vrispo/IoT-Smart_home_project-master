@@ -1,0 +1,18 @@
+
+PER UTILIZZARE L'APPLICAZIONE
+
+1-  Avviare contikier
+2-  Cambiare la cartella con cd tools/cooja
+3-  Lanciare il comando ant run
+4-  Creare il modello di simulazione (Avvia il serial socket sul nodo BR che deve essere il nodo 1)
+5-  Aprire un altro terminale e fuori dal container spostarsi nella cartella BR/
+6-  Avviare il socket con make TARGET=cooja connect-router-cooja
+7-  Aprire un altro terminale e spostarsi nella cartella IoT_gui_app
+8-  Digitare il comando npm start per avviare la GUI
+9-  Aprire un altro terminale e spostarsi nella cartella CoAP_python/
+10- Digitare il comando per lanciare i backend server: python3 coap_server.py (deve essere usato python 3.x, col 2 il modulo aiocoap non funziona)
+11- Premere start per iniziar la simulazione su cooja (speed limit 100%)
+12- Utilizzare la GUI per interagire con la rete di sensori 
+
+
+
